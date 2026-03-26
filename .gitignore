@@ -1,0 +1,12 @@
+# Python & Django
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Note: We are specifically NOT ignoring db.sqlite3 for this intern 
+# task so the reviewer can see your provided sample data immediately.
