@@ -9,7 +9,7 @@ class TaskSerializer(serializers.ModelSerializer):
     - 'project_name' is a read-only field that shows the project's name
       instead of just the project's ID number. Makes the API response much
       more readable.
-      
+    """
     project_name = serializers.CharField(source='project.name', read_only=True)
 
     class Meta:
