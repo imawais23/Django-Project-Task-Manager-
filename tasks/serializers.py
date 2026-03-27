@@ -13,7 +13,6 @@ class TaskSerializer(serializers.ModelSerializer):
       instead of the raw stored value (e.g. "in_progress").
     """
     project_name = serializers.CharField(source='project.name', read_only=True)
-    #status_display = serializers.CharField(source='get_status_display', read_only=True)
 
     class Meta:
         model = Task
