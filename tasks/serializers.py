@@ -9,9 +9,7 @@ class TaskSerializer(serializers.ModelSerializer):
     - 'project_name' is a read-only field that shows the project's name
       instead of just the project's ID number. Makes the API response much
       more readable.
-    - 'status_display' returns the human-readable label (e.g. "In Progress")
-      instead of the raw stored value (e.g. "in_progress").
-    """
+      
     project_name = serializers.CharField(source='project.name', read_only=True)
 
     class Meta:
